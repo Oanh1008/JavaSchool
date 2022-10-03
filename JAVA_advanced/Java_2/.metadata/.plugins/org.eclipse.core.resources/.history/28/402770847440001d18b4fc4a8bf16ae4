@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+	String kt = request.getParameter("kt");
+	if ( kt != null  && kt.equals("0")){
+		out.print("<script>alert('Dang nhap k cung sai :((( ');</script>");
+		 
+	}
+	%>
+	<form action="ktdn.jsp" method="post">
+		Un <input name="txtun" type="text" value=""> <br> pass <input
+			name="txtpass" type="text" value=""> <br> <input
+			name="but1" type="submit" value="Login">
+	</form>
+
+</body>
+</html>

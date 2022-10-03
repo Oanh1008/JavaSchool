@@ -1,0 +1,44 @@
+<%@page import="java.util.Random"%>
+<%@page import="java.io.File"%>
+<%@page import="java.io.BufferedReader"%>
+<%@page import="java.io.FileReader"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+	/** Read file */
+	FileReader fr = new FileReader(new File("C:\\Users\\GB OANH\\Desktop\\xskt.txt"));
+	BufferedReader br = new BufferedReader(fr);
+	String s;
+	while ((s = br.readLine()) != null) {
+	%>
+	<p>
+		<%=s%></p>
+	<%
+	}
+	%>
+
+	<%
+	String ngay = request.getParameter("sngay");
+	String thang = request.getParameter("sthang");
+	String nam = request.getParameter("snam");
+	Random r = new Random();
+	if (ngay != null && thang != null && nam != null) {
+	%>
+	Ket qua xo so ngay:
+	<%=ngay%>/<%=thang%>/<%=nam%>
+	<br>
+	<%=r.nextInt(100)%>
+	<%
+	}
+	%>
+
+
+</body>
+</html>

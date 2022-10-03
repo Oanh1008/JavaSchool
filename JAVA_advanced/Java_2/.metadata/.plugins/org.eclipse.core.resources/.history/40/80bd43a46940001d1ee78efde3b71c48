@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/5.2.1/css/bootstrap.min.css">
+
+
+</head>
+<body>
+	<div align="center" style="font-size: xx-large; color: ;">BẢrichness: G CỬU CHƯƠNG</div>
+	<table class="table">
+		<thead>
+			<tr>
+				<% for( int i = 2; i < 10 ; i++){%>
+				<th scope="col">Bảng cửu chương <%=i %></th>
+				<% }%>
+				
+		</thead>
+		<tbody>
+		
+		<%for (int i = 1; i < 10 ;i++) {%>
+		<tr>
+			<% for (int j = 2; j < 10;j++) {%>
+			<td><%=j %> * <%=i %> = <%=i*j %></td>
+			<%} %>
+		</tr>
+			<%} %>
+	
+		</tbody>
+	</table>
+</body>
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/5.2.1/js/bootstrap.min.js"></script>
+</html>

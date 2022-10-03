@@ -1,0 +1,76 @@
+
+u	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(À´…‚ûÿÿÿÿHLRMAJORZ
+CODE_SMELL
+„
+java:S2293="YReplace the type specification in this constructor call with the diamond operator ("<>").(×¢ÃãHMRMINORZ
+CODE_SMELL
+„
+java:S2293?"YReplace the type specification in this constructor call with the diamond operator ("<>").(Çœ²šHORMINORZ
+CODE_SMELL
+…
+java:S2293…"YReplace the type specification in this constructor call with the diamond operator ("<>").(İÛúHQRMINORZ
+CODE_SMELL
+Š
+java:S2293†"YReplace the type specification in this constructor call with the diamond operator ("<>").(´æµÁşÿÿÿÿHSRMINORZ
+CODE_SMELL
+…
+java:S2293¯"YReplace the type specification in this constructor call with the diamond operator ("<>").(İÛúHURMINORZ
+CODE_SMELL
+Š
+java:S2293°"YReplace the type specification in this constructor call with the diamond operator ("<>").(´æµÁşÿÿÿÿHWRMINORZ
+CODE_SMELL
+Š
+java:S2293æ"YReplace the type specification in this constructor call with the diamond operator ("<>").(Æ¾÷ùÿÿÿÿHYRMINORZ
+CODE_SMELL
+œ
+java:S1319"qThe return type of this method should be an interface such as "List" rather than the implementation "LinkedList".(ıÜ±ÙH[RMINORZ
+CODE_SMELL
+
+java:S1319ä"qThe return type of this method should be an interface such as "List" rather than the implementation "LinkedList".(«ÙÉ¹H]RMINORZ
+CODE_SMELL
+
+java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "path".(×¨Ì¡üÿÿÿÿH_RMINORZ
+CODE_SMELL
+
+java:S1488¹"\Immediately return this expression instead of assigning it to the temporary variable "path".(×¨Ì¡üÿÿÿÿHbRMINORZ
+CODE_SMELL
+‘
+java:S1488ş"eImmediately return this expression instead of assigning it to the temporary variable "shouldProceed".(ì«ñHeRMINORZ
+CODE_SMELL
+E
+java:S1220""Move this file to a named package.HhRMINORZ
+CODE_SMELL
+f
+java:S21842"BCast one of the operands of this addition operation to a "double".(³íâ³HiRMINORZBUG
+g
+java:S2589p"7Remove this expression which always evaluates to "true"(ä®™¨ûÿÿÿÿHjRMAJORZ
+CODE_SMELL
+h
+java:S2583m"DChange this condition so that it does not always evaluate to "false"(ÂÍ±ĞHmRMAJORZBUG
+O	java:S131""Add a default case to this switch.(ÜŸ•HpRCRITICALZ
+CODE_SMELL
+€
+java:S3776<"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Šğ‘ßHqRCRITICALZ
+CODE_SMELL
+W
+java:S1905M",Remove this unnecessary cast to "SnakeNode".(Ø§±àHzRMINORZ
+CODE_SMELL
+V
+java:S1168y"+Return an empty collection instead of null.(¥¹ïH|RMAJORZ
+CODE_SMELL
+W
+java:S1168¢"+Return an empty collection instead of null.(¥¹ïH~RMAJORZ
+CODE_SMELL
+X
+java:S1168Ë"+Return an empty collection instead of null.(¥¹ïH€RMAJORZ
+CODE_SMELL
+e	java:S106Ş"9Replace this use of System.out or System.err by a logger.(öœÅÆH‚RMAJORZ
+CODE_SMELL
+g	java:S125ÿ"<This block of commented-out lines of code should be removed.(ñûÁRHƒRMAJORZ
+CODE_SMELL
+[
+java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕH„RMINORZ
+CODE_SMELL
+X
+java:S1128",Remove this unused import 'java.util.Queue'.(Äá™ôH†RMINORZ
+CODE_SMELL

@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	
+      <form action="bccClick.jsp?n=n" method="get">
+       Nhập n <input  type="text" name ="n" min="2" max="9"  value="<%=request.getParameter("n") ==null?"0":request.getParameter("n")%>">
+       <input type="submit" value="Tinh">
+      </form>
+       
+     	
+         <%String n=request.getParameter("n");
+         if(n==null || n == "" || !n.matches("^-?\\d*\\.{0,1}\\d+$"))
+        	 out.print("Nhập giá trị số mới chạy được, tính phá web à?");
+         else{
+        	 int number = Integer.parseInt(n);
+        	 if(number < 2 || number >9){
+        		 out.print("Nhập trong khoảng từ 2->9 mày :(())");
+        	 }else{
+        		 
+        	 for(int i = 1;i<10;i++){ %>        	
+        		 <p><%=n%>  *  <%=i %>  = <%=(number*i) %> </p>
+        <% 	}
+        	 }
+         }%>
+         
+        
+
+	
+</body>
+</html>

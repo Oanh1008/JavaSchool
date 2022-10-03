@@ -1,0 +1,68 @@
+
+‚	java:S116"RRename this field "B_WIDTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„üÒúÿÿÿÿHŒRMINORZ
+CODE_SMELL
+ƒ	java:S116"SRename this field "B_HEIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØØôåùÿÿÿÿHRMINORZ
+CODE_SMELL
+ƒ	java:S116"SRename this field "DOT_SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã±ĞÑüÿÿÿÿHRMINORZ
+CODE_SMELL
+~	java:S116"SRename this field "ALL_DOTS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îº¨ÕHRMINORZ
+CODE_SMELL
+ƒ	java:S116"SRename this field "RAND_POS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æôø£şÿÿÿÿHRMINORZ
+CODE_SMELL
+{	java:S116"PRename this field "DELAY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â›»H‘RMINORZ
+CODE_SMELL
+‚	java:S116"RRename this field "apple_x" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÒíœøÿÿÿÿH’RMINORZ
+CODE_SMELL
+}	java:S116 "RRename this field "apple_y" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·òÓæH“RMINORZ
+CODE_SMELL
+]
+java:S2387"*"x" is the name of a field in "Component".(úÉØšúÿÿÿÿH”RBLOCKERZ
+CODE_SMELL
+X
+java:S2387"*"y" is the name of a field in "Component".(–çĞäH•RBLOCKERZ
+CODE_SMELL
+R
+java:S1170"!Make this final field static too.(„üÒúÿÿÿÿH–RMINORZ
+CODE_SMELL
+R
+java:S1170"!Make this final field static too.(ØØôåùÿÿÿÿH—RMINORZ
+CODE_SMELL
+R
+java:S1170"!Make this final field static too.(Ã±ĞÑüÿÿÿÿH˜RMINORZ
+CODE_SMELL
+M
+java:S1170"!Make this final field static too.(îº¨ÕH™RMINORZ
+CODE_SMELL
+R
+java:S1170"!Make this final field static too.(Æôø£şÿÿÿÿHšRMINORZ
+CODE_SMELL
+M
+java:S1170"!Make this final field static too.(Â›»H›RMINORZ
+CODE_SMELL
+Z
+java:S1948)"&Make "ball" transient or serializable.(Å¸ˆøÿÿÿÿHœRCRITICALZ
+CODE_SMELL
+V
+java:S1948*"'Make "apple" transient or serializable.(Í»¨âHRCRITICALZ
+CODE_SMELL
+Z
+java:S1948+"&Make "head" transient or serializable.(ÁıÿÿÿÿÿHRCRITICALZ
+CODE_SMELL
+[
+java:S1197"*Move the array designators [] to the type.(úÉØšúÿÿÿÿHŸRMINORZ
+CODE_SMELL
+V
+java:S1197"*Move the array designators [] to the type.(–çĞäH¢RMINORZ
+CODE_SMELL
+V
+java:S2140Á")Use "java.util.Random.nextInt()" instead.(ï«ƒÜH¥RMINORZ
+CODE_SMELL
+S
+java:S1110Â"!Remove these useless parentheses.(‘‡°ĞÿÿÿÿÿH¦RMAJORZ
+CODE_SMELL
+[
+java:S2140Ä")Use "java.util.Random.nextInt()" instead.(ëàæıÿÿÿÿH¨RMINORZ
+CODE_SMELL
+M
+java:S1110Å"!Remove these useless parentheses.(Œ³rH©RMAJORZ
+CODE_SMELL

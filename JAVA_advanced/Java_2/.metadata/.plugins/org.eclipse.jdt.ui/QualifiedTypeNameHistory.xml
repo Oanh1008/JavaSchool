@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="dao.LoaiDao"/>
+    <fullyQualifiedTypeName name="bean.LoaiBean"/>
+    <fullyQualifiedTypeName name="dao.SachDao"/>
+    <fullyQualifiedTypeName name="bo.SachBo"/>
+    <fullyQualifiedTypeName name="bean.SachBean"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="dao.ClassDao"/>
+    <fullyQualifiedTypeName name="bo.ClassBo"/>
+    <fullyQualifiedTypeName name="dao.StudentDao"/>
+    <fullyQualifiedTypeName name="bean.ClassBean"/>
+    <fullyQualifiedTypeName name="bean.StudentBean"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collector"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="bo.GioHangBo"/>
+    <fullyQualifiedTypeName name="bean.GioHangBean"/>
+</qualifiedTypeNameHistroy>

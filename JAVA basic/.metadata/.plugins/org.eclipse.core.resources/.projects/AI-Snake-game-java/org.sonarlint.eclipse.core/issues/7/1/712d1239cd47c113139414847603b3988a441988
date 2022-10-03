@@ -1,0 +1,53 @@
+
+~
+java:S1104"SMake mySnake a static final constant or non-public and provide accessors if needed.(òàªüHRMINORZ
+CODE_SMELL
+E
+java:S1220""Move this file to a named package.HRMINORZ
+CODE_SMELL
+¯
+java:S1186p"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—HRCRITICALZ
+CODE_SMELL
+µ
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜Â½€øÿÿÿÿHRCRITICALZ
+CODE_SMELL
+W
+java:S1948")Make "mySnake" transient or serializable.(òàªüHRCRITICALZ
+CODE_SMELL
+_
+java:S1948",Make "gameRunner" transient or serializable.(ñ½©ÊøÿÿÿÿHRCRITICALZ
+CODE_SMELL
+a
+java:S1948".Make "foodProvider" transient or serializable.(ıŞ€İşÿÿÿÿHRCRITICALZ
+CODE_SMELL
+c
+java:S1948"0Make "foodController" transient or serializable.(ë›Ç¢şÿÿÿÿHRCRITICALZ
+CODE_SMELL
+^
+java:S1948"+Make "mySnakeAi" transient or serializable.(® ÜıÿÿÿÿHRCRITICALZ
+CODE_SMELL
+e
+java:S18542"5Remove this useless assignment to local variable "n".(ìâšŠşÿÿÿÿHRMAJORZ
+CODE_SMELL
+V
+java:S14812"&Remove this unused "n" local variable.(ìâšŠşÿÿÿÿHRMINORZ
+CODE_SMELL
+f	java:S125Y"<This block of commented-out lines of code should be removed.(ø¥æäHRMAJORZ
+CODE_SMELL
+T	java:S131w""Add a default case to this switch.(ù‚ÓøÿÿÿÿHRCRITICALZ
+CODE_SMELL
+h	java:S106y"9Replace this use of System.out or System.err by a logger.(íŸö½ÿÿÿÿÿHRMAJORZ
+CODE_SMELL
+h	java:S106"9Replace this use of System.out or System.err by a logger.(˜®€ÊşÿÿÿÿH RMAJORZ
+CODE_SMELL
+i	java:S106…"9Replace this use of System.out or System.err by a logger.(ŞÆ§üÿÿÿÿH!RMAJORZ
+CODE_SMELL
+[
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±ÄøÿÿÿÿH"RMINORZ
+CODE_SMELL
+d
+java:S1128"4Remove this unused import 'java.util.PriorityQueue'.(ÆãÑşøÿÿÿÿH$RMINORZ
+CODE_SMELL
+]
+java:S1128	"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿH&RMINORZ
+CODE_SMELL

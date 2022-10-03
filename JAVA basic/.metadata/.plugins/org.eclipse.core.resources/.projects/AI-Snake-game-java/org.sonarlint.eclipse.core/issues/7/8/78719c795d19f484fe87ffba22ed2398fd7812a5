@@ -1,0 +1,13 @@
+
+E
+java:S1220""Move this file to a named package.H(RMINORZ
+CODE_SMELL
+h	java:S106"9Replace this use of System.out or System.err by a logger.(ç¶…·üÿÿÿÿH)RMAJORZ
+CODE_SMELL
+c	java:S106"9Replace this use of System.out or System.err by a logger.(â«Ž…H*RMAJORZ
+CODE_SMELL
+h	java:S106"9Replace this use of System.out or System.err by a logger.(ˆÏ¿üþÿÿÿÿH+RMAJORZ
+CODE_SMELL
+_
+java:S1128"/Remove this unused import 'javax.swing.JFrame'.(ßŒŸûùÿÿÿÿH,RMINORZ
+CODE_SMELL
