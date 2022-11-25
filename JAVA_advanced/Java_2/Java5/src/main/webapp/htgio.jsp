@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 
+<%@page import="java.util.Enumeration"%>
 <%@page import="bo.GioHangBo"%>
 <%@page import="bean.GioHangBean"%>
 <%@page import="bean.LoaiBean"%>
@@ -37,41 +38,20 @@
 
 </head>
 <body>
+
 	<%
 	request.setCharacterEncoding("utf-8");
 	response.setCharacterEncoding("utf-8");
-	LoaiBo lbo = new LoaiBo();
-	SachBo sbo = new SachBo();
-	String tk = request.getParameter("txttk");
-	String ml = request.getParameter("ml");
-	List<SachBean> dssach = sbo.getSach();
-	if (tk != null) {
-		dssach = sbo.find(tk);
-	}
-	if (ml != null) {
-		dssach = sbo.searchMl(ml);
-	}
+
 	// GioHang
 	GioHangBo gh = null;
 	if (session.getAttribute("gio") != null) {
 		gh = (GioHangBo) session.getAttribute("gio");
 	}
-	// Xoa giohang
-	String msx = request.getParameter("msx");
-	if (msx != null){
-		if (msx.equals("all")){
-			gh.xoaAll();
-		}
-		else{
-			gh.xoaSach(msx);
-		}
-	}
-	// Update số lượng
-	String ms = request.getParameter("ms");
-	String slTemp = request.getParameter("sl");
-	if ( ms !=null && slTemp !=null){
-		gh.suaSL(ms, Long.parseLong(slTemp));
-	}
+	
+	List<LoaiBean> dsloai = (List<LoaiBean>) request.getAttribute("dsloai");
+	
+
 	%>
 	<!-- Navigation -->
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -90,12 +70,12 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="htsach.jsp">TRANG CHỦ</a></li>
+					<li><a href="HtSach">TRANG CHỦ</a></li>
 					<li><a href="/Nguoidung/Dangky">ĐĂNG K&#221;</a></li>
 					<li><a href="/Nguoidung/Dangnhap">ĐĂNG NHẬP</a></li>
-					<li><a href="/Giohang/Giohang"
+					<li><a href="Giohang"
 						style="color: white; font-weight: bold; text-decoration: none;">
-							<img src="images/giohang.gif" />Giỏ Hàng (<%=gh.ds.size() %>)
+							<img src="images/giohang.gif" />Giỏ Hàng (<%=gh.ds.size()%>)
 					</a></li>
 				</ul>
 			</div>
@@ -111,10 +91,10 @@
 				<p class="lead">CHỦ ĐỀ SÁCH</p>
 				<div class="list-group">
 					<%
-					for (LoaiBean l : lbo.getLoai()) {
+					for (LoaiBean l : dsloai) {
 					%>
 
-					<a class="list-group-item" href="htsach.jsp?ml=<%=l.getMaloai()%>">
+					<a class="list-group-item" href="HtSach?ml=<%=l.getMaloai()%>">
 						<%=l.getTenloai()%>
 					</a>
 					<%
@@ -126,7 +106,7 @@
 
 			</div>
 			<div class="col-md-9">
-				
+
 
 				<div>
 
@@ -136,7 +116,7 @@
 							<tr style="text-align: center; font-weight: bold">
 								<td>Mã sách</td>
 								<td>Tên sách</td>
-								<td>Ảnh bìa</td>
+						
 								<td>Số lượng</td>
 								<td>Đơn giá</td>
 								<td>Thành tiền</td>
@@ -144,28 +124,33 @@
 								<td width="50px"></td>
 								<td width="50px">Chọn</td>
 							</tr>
-							<%
+							<form action="XuLyGio" method="get">
+								<%
+								for (GioHangBean g : gh.ds) {
+								%>
 							
-							for (GioHangBean g : gh.ds) {
-							%>
 							<tr style="text-align: center; font-weight: bold">
 								<td><%=g.getMasach()%></td>
 								<td><%=g.getTensach()%></td>
-								<td><img src="Hinhsanpham/TiengAnh01.jpg"></td>
-								<form action="htgio.jsp" method="get">
-									<input type ="hidden" name="ms" value =<%=g.getMasach()%>>
-									<td><input type="number" min="1" name="sl" style="background-color: yellow" value =<%=g.getSoluong()%>></td>
-									<td><%=g.getGia()%></td>
-									<td><%=g.getThanhtien()%></td>
-									<td><a href="htgio.jsp?msx=<%=g.getMasach()%>">Xóa</a></td>
-									<td><input type="submit" value="Cập Nhật"></td>
-									<td><input type="checkbox"></td>
-								</form>
+								
+
+								<input type="hidden" name="ms" value=<%=g.getMasach()%>>
+								<td><input type="number" min="1" name="txt<%=g.getMasach()%>"
+									style="background-color: yellow" value=<%=g.getSoluong()%>></td>
+								<td><%=g.getGia()%></td>
+								<td><%=g.getThanhtien()%></td>
+								<td><a href="XuLyGio?msx=<%=g.getMasach()%>">Xóa</a></td>
+								<td>
+									<button type="submit" name="butSua" value="<%=g.getMasach()%>">Cập nhật</button>
+								</td>
+								<td><input name="selected" value ="<%=g.getMasach()%>" type="checkbox"></td>
+
 							</tr>
 							<%
 							}
-							
 							%>
+							<button type="submit" name="butXoa" value="xoaChon" >Xóa chọn</button>
+							</form>
 
 							<tr style="font-weight: bold; text-align: right; color: red">
 								<td colspan="4">Số lượng sách: <%=gh.TongSach()%></td>
@@ -173,11 +158,11 @@
 								</td>
 							</tr>
 							<tr style="font-weight: bold; color: blue; text-align: right">
-								<td colspan="9"><a href="htgio.jsp?msx=all">Xóa
-										Giỏ Hàng</a></td>
+								<td colspan="9"><a href="XuLyGio?xoaAll=all">Xóa Giỏ
+										Hàng</a></td>
 							</tr>
 							<tr style="font-weight: bold; color: blue; text-align: right">
-								<td colspan="9" align="center"><a href="/GioHang/Dathang">ĐẶT
+								<td colspan="9" align="center"><a href="MuaHang">ĐẶT
 										HÀNG</a></td>
 							</tr>
 						</tbody>

@@ -1,64 +1,61 @@
 
-}
-java:S1192"GDefine a constant instead of duplicating this literal "class3" 5 times.(¤¦îÔ8 ˆÌÃ¶0Hµ	RCRITICALZ
-CODE_SMELL
 à
-java:S1192"¤Define a constant instead of duplicating this literal "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQicaAk6yLvbzPQI_kofQNAfgplJ_JAu0somQ&usqp=CAU" 3 times.(”Ñ˜¹şÿÿÿÿ8½îêÁ¸0H½RCRITICALZ
+java:S1192"¤Define a constant instead of duplicating this literal "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh3tPP3ETG6smkYSZGZBfaoV6OZPHzOZvjNQ&usqp=CAU" 5 times.(©¼Şˆùÿÿÿÿ8½îêÁ¸0H„-RCRITICALZ
 CODE_SMELL
 ‚
-java:S1192"GDefine a constant instead of duplicating this literal "class6" 4 times.(†¨ÿ¬ûÿÿÿÿ8 ˆÌÃ¶0Há	RCRITICALZ
+java:S1192"GDefine a constant instead of duplicating this literal "class2" 5 times.(ÙõşÜşÿÿÿÿ8 ˆÌÃ¶0HŠ-RCRITICALZ
 CODE_SMELL
-‚
-java:S1192"GDefine a constant instead of duplicating this literal "class2" 5 times.(ÙõşÜşÿÿÿÿ8 ˆÌÃ¶0H»	RCRITICALZ
-CODE_SMELL
-}
-java:S1192"GDefine a constant instead of duplicating this literal "class5" 4 times.(š¾§ì8 ˆÌÃ¶0HÉ	RCRITICALZ
-CODE_SMELL
-‚
-java:S1192"GDefine a constant instead of duplicating this literal "class4" 5 times.(©¼Şˆùÿÿÿÿ8 ˆÌÃ¶0HÃ	RCRITICALZ
-CODE_SMELL
-à
-java:S1192"¤Define a constant instead of duplicating this literal "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdKF2_vXjGIW8u6ug9bt1k_OL6srb9CyjVPw&usqp=CAU" 3 times.(ÙõşÜşÿÿÿÿ8½îêÁ¸0HËRCRITICALZ
-CODE_SMELL
-„
-java:S1192"NDefine a constant instead of duplicating this literal "Quáº£ng Trá»‹" 4 times.(¤œ—8†èöÀ¸0Hˆ
-RCRITICALZ
+Û
+java:S1192"¤Define a constant instead of duplicating this literal "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVIQkLz5p1_3jCLnEmdiNBOHPWpbxDYDk-wQ&usqp=CAU" 3 times.(š¾§ì8½îêÁ¸0H-RCRITICALZ
 CODE_SMELL
 ’
-java:S1192"WDefine a constant instead of duplicating this literal "19T1021165@husc.edu.vn" 3 times.(ÙõşÜşÿÿÿÿ8âÜÁ¸0HôRCRITICALZ
-CODE_SMELL
-à
-java:S1192"¤Define a constant instead of duplicating this literal "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdgVO1IcckhFG-xjs4X6uFKK3D0OlzVg04Pg&usqp=CAU" 9 times.(¥ÿëÿÿÿÿÿ8½îêÁ¸0HÁRCRITICALZ
-CODE_SMELL
-Û
-java:S1192"¤Define a constant instead of duplicating this literal "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVIQkLz5p1_3jCLnEmdiNBOHPWpbxDYDk-wQ&usqp=CAU" 3 times.(š¾§ì8½îêÁ¸0HÏRCRITICALZ
+java:S1192"WDefine a constant instead of duplicating this literal "19T1021165@husc.edu.vn" 3 times.(ÙõşÜşÿÿÿÿ8âÜÁ¸0H”-RCRITICALZ
 CODE_SMELL
 }
-java:S1192"GDefine a constant instead of duplicating this literal "class1" 4 times.(¨¥²í8†èöÀ¸0Hƒ
-RCRITICALZ
-CODE_SMELL
-e
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8†èöÀ¸0H
-RMINORZ
-CODE_SMELL
-‡
-java:S1192"LDefine a constant instead of duplicating this literal "Quáº£ng Nam" 7 times.(©¼Şˆùÿÿÿÿ8 ˆÌÃ¶0HÙ	RCRITICALZ
+java:S1192"GDefine a constant instead of duplicating this literal "class5" 4 times.(š¾§ì8 ˆÌÃ¶0H˜-RCRITICALZ
 CODE_SMELL
 ^
-java:S1128"+Remove this unused import 'bean.ClassBean'.(ïƒêØ8 ˆÌÃ¶0HÁ	RMINORZ
-CODE_SMELL
-Û
-java:S1192"¤Define a constant instead of duplicating this literal "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrPD-M7flVPXdlTG8hwlI7c8Ng60OM5Jl1Uw&usqp=CAU" 3 times.(¤¦îÔ8½îêÁ¸0HÓRCRITICALZ
-CODE_SMELL
-ˆ
-java:S1192"RDefine a constant instead of duplicating this literal "Pháº¡m VÄƒn Oanh" 14 times.(ÿö£º8†èöÀ¸0Hæ	RCRITICALZ
-CODE_SMELL
-à
-java:S1192"¤Define a constant instead of duplicating this literal "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh3tPP3ETG6smkYSZGZBfaoV6OZPHzOZvjNQ&usqp=CAU" 5 times.(©¼Şˆùÿÿÿÿ8½îêÁ¸0H·RCRITICALZ
-CODE_SMELL
-ˆ
-java:S1192"MDefine a constant instead of duplicating this literal "ÄÃ  Náºµng" 10 times.(†¨ÿ¬ûÿÿÿÿ8 ˆÌÃ¶0HÎ	RCRITICALZ
+java:S1128"+Remove this unused import 'bean.ClassBean'.(ïƒêØ8 ˆÌÃ¶0H-RMINORZ
 CODE_SMELL
 †
-java:S1192"KDefine a constant instead of duplicating this literal "19T1021165" 3 times.(ÙõşÜşÿÿÿÿ8ıº¯Â¸0HŸRCRITICALZ
+java:S1192"KDefine a constant instead of duplicating this literal "19T1021165" 3 times.(ÙõşÜşÿÿÿÿ8ıº¯Â¸0HŸ-RCRITICALZ
+CODE_SMELL
+ˆ
+java:S1192"MDefine a constant instead of duplicating this literal "ÄÃ  Náºµng" 10 times.(†¨ÿ¬ûÿÿÿÿ8 ˆÌÃ¶0H£-RCRITICALZ
+CODE_SMELL
+à
+java:S1192"¤Define a constant instead of duplicating this literal "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdgVO1IcckhFG-xjs4X6uFKK3D0OlzVg04Pg&usqp=CAU" 9 times.(¥ÿëÿÿÿÿÿ8½îêÁ¸0H®-RCRITICALZ
+CODE_SMELL
+e
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8†èöÀ¸0H¸-RMINORZ
+CODE_SMELL
+à
+java:S1192"¤Define a constant instead of duplicating this literal "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdKF2_vXjGIW8u6ug9bt1k_OL6srb9CyjVPw&usqp=CAU" 3 times.(ÙõşÜşÿÿÿÿ8½îêÁ¸0Hº-RCRITICALZ
+CODE_SMELL
+Û
+java:S1192"¤Define a constant instead of duplicating this literal "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrPD-M7flVPXdlTG8hwlI7c8Ng60OM5Jl1Uw&usqp=CAU" 3 times.(¤¦îÔ8½îêÁ¸0H¾-RCRITICALZ
+CODE_SMELL
+„
+java:S1192"NDefine a constant instead of duplicating this literal "Quáº£ng Trá»‹" 4 times.(¤œ—8†èöÀ¸0HÂ-RCRITICALZ
+CODE_SMELL
+}
+java:S1192"GDefine a constant instead of duplicating this literal "class3" 5 times.(¤¦îÔ8 ˆÌÃ¶0HÇ-RCRITICALZ
+CODE_SMELL
+‡
+java:S1192"LDefine a constant instead of duplicating this literal "Quáº£ng Nam" 7 times.(©¼Şˆùÿÿÿÿ8 ˆÌÃ¶0HÍ-RCRITICALZ
+CODE_SMELL
+ˆ
+java:S1192"RDefine a constant instead of duplicating this literal "Pháº¡m VÄƒn Oanh" 14 times.(ÿö£º8†èöÀ¸0HÕ-RCRITICALZ
+CODE_SMELL
+‚
+java:S1192"GDefine a constant instead of duplicating this literal "class6" 4 times.(†¨ÿ¬ûÿÿÿÿ8 ˆÌÃ¶0Hä-RCRITICALZ
+CODE_SMELL
+}
+java:S1192"GDefine a constant instead of duplicating this literal "class1" 4 times.(¨¥²í8†èöÀ¸0Hé-RCRITICALZ
+CODE_SMELL
+à
+java:S1192"¤Define a constant instead of duplicating this literal "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQicaAk6yLvbzPQI_kofQNAfgplJ_JAu0somQ&usqp=CAU" 3 times.(”Ñ˜¹şÿÿÿÿ8½îêÁ¸0Hî-RCRITICALZ
+CODE_SMELL
+‚
+java:S1192"GDefine a constant instead of duplicating this literal "class4" 5 times.(©¼Şˆùÿÿÿÿ8 ˆÌÃ¶0Hò-RCRITICALZ
 CODE_SMELL

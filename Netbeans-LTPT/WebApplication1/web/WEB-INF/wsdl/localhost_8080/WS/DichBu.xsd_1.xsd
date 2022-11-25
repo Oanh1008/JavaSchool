@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://a/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://a/">
+
+<xs:element name="hello" type="tns:hello" />
+
+<xs:element name="helloResponse" type="tns:helloResponse" />
+
+<xs:element name="nhan" type="tns:nhan" />
+
+<xs:element name="nhanResponse" type="tns:nhanResponse" />
+
+<xs:element name="operation" type="tns:operation" />
+
+<xs:element name="operationResponse" type="tns:operationResponse" />
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="operation">
+<xs:sequence>
+<xs:element name="a" type="xs:int" />
+<xs:element name="b" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="operationResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nhan">
+<xs:sequence>
+<xs:element name="a" type="xs:int" />
+<xs:element name="b" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nhanResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

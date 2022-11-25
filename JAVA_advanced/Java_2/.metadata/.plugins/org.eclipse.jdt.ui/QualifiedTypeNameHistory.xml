@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="dao.LoaiDao"/>
-    <fullyQualifiedTypeName name="bean.LoaiBean"/>
     <fullyQualifiedTypeName name="dao.SachDao"/>
-    <fullyQualifiedTypeName name="bo.SachBo"/>
-    <fullyQualifiedTypeName name="bean.SachBean"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="dao.ClassDao"/>
     <fullyQualifiedTypeName name="bo.ClassBo"/>
@@ -12,9 +9,42 @@
     <fullyQualifiedTypeName name="bean.ClassBean"/>
     <fullyQualifiedTypeName name="bean.StudentBean"/>
     <fullyQualifiedTypeName name="java.util.stream.Collector"/>
-    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="bo.GioHangBo"/>
     <fullyQualifiedTypeName name="bean.GioHangBean"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.net.http.HttpRequest"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="bo.LoaiBo"/>
+    <fullyQualifiedTypeName name="bo.SachBo"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="dao.DbProvider"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="bean.LoaiBean"/>
+    <fullyQualifiedTypeName name="java.lang.AutoCloseable"/>
+    <fullyQualifiedTypeName name="utils.AutoClose"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="bean.SachBean"/>
+    <fullyQualifiedTypeName name="dao.UserDao"/>
+    <fullyQualifiedTypeName name="bo.LoginBo"/>
+    <fullyQualifiedTypeName name="bean.LoginBean"/>
+    <fullyQualifiedTypeName name="utils.StringUtils"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="dao.MuaHangDao"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="bean.LichSuMuaHang"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="javax.websocket.Session"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="bean.UserBean"/>
+    <fullyQualifiedTypeName name="bo.GioHangBo"/>
+    <fullyQualifiedTypeName name="bo.GioHangBo.Temp"/>
+    <fullyQualifiedTypeName name="java.util.Objects"/>
+    <fullyQualifiedTypeName name="bean.Temp"/>
 </qualifiedTypeNameHistroy>

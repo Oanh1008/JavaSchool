@@ -1,11 +1,20 @@
 package bo;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 import bean.GioHangBean;
+import bean.LichSuMuaHang;
+import bean.Temp;
+import dao.MuaHangDao;
 
 public class GioHangBo {
+	
+	private MuaHangDao muaHangDao = new MuaHangDao();
 	public List<GioHangBean> ds = new ArrayList<>();
 
 	public void Them(String masach, String tensach, long gia, long soluong) {
@@ -39,4 +48,17 @@ public class GioHangBo {
 			}
 		}
 	}
+	
+	public String bookGoods(int makh,List<GioHangBean> sachMuas,long tien) {
+		return muaHangDao.bookGoods(makh, sachMuas,ThanhTien());
+	}
+	
+	public Map<Temp, List<LichSuMuaHang>> lichSuMuaHang(int maKh){
+		
+		Map<Temp, List<LichSuMuaHang>> rs = muaHangDao.lichSuMuaHang(maKh).stream()
+				.sorted(Comparator.comparing(LichSuMuaHang::getNgayMua))
+				.collect(Collectors.groupingBy(t-> new Temp(t.getMhd(),t.getNgayMua(), t.getTongtien())));
+		return rs;
+	}
+
 }

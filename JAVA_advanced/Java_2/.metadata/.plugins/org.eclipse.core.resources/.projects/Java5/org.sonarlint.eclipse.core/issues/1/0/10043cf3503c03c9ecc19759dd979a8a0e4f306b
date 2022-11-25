@@ -1,0 +1,12 @@
+
+e
+java:S1128"2Remove this unused import 'java.sql.SQLException'.(ÛïÆŸ8ŠËíâÁ0HÁ,RMINORZ
+CODE_SMELL
+e
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8üÏ×âÁ0HÃ,RMINORZ
+CODE_SMELL
+‚
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¨Î±ÿÿÿÿÿ8æıæâÁ0HÅ,RBLOCKERZBUG
+_
+java:S1128",Remove this unused import 'utils.AutoClose'.(Æ€í8æıæâÁ0HÆ,RMINORZ
+CODE_SMELL

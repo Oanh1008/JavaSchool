@@ -12,11 +12,16 @@ public class SachBo {
 	static {
 		sachDao = new SachDao();
 	}
+	
 	List<SachBean> ds;
-
 	public List<SachBean> getSach() {
-		ds = sachDao.getSach();
-		return ds;
+		return sachDao.getSach();
+	
+	}
+	
+	public List<SachBean> getSach(int page, int size) {
+		return sachDao.getSach(page,size);
+		
 	}
 	/**
 	 * search by mã loại
@@ -24,12 +29,12 @@ public class SachBo {
 	 * @return
 	 */
 	public List<SachBean> searchMl(String ml){
-		return ds.stream().filter(s -> s.getMaloai().equals(ml))
+		return getSach().stream().filter(s -> s.getMaloai().equals(ml))
 				.collect(Collectors.toList());
 	}
 	
 	public List<SachBean> find(String tk) {
-		return ds.stream().filter(s ->s.getTensach().toLowerCase().contains(tk.toLowerCase().trim()))
+		return getSach().stream().filter(s ->s.getTensach().toLowerCase().contains(tk.toLowerCase().trim()))
 				.collect(Collectors.toList());
 	}
 }

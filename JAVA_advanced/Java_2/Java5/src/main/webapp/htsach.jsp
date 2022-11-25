@@ -1,3 +1,6 @@
+<%@page import="bean.UserBean"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="java.lang.reflect.Array"%>
 <%@page import="java.util.stream.Collectors"%>
 <%@page import="java.util.Collections"%>
 <%@page import="java.util.List"%>
@@ -7,6 +10,8 @@
 <%@page import="bo.LoaiBo"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,30 +30,33 @@ response.setCharacterEncoding("utf-8");
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+	<%
+	UserBean user = (UserBean) session.getAttribute("dn");
+	%>
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="#">Trang chủ</a></li>
-				<li><a href="htgio.jsp">Giỏ hàng</a></li>
-				<li><a href="thanhtoan.jsp">Thanh toán</a></li>
-				<li><a href="lichsu.jsp">Lịch sử mua hàng</a></li>
+				<li><a href="GioHang">Giỏ hàng</a></li>
+				<li><a href="GioHang">Thanh toán</a></li>
+				<li><a href="LichSuMuaHang">Lịch sử mua hàng</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 
 				<%
 				if (session.getAttribute("dn") == null) {
 				%>
-				<li><a href="dangky.jsp"><span
-						class="glyphicon glyphicon-user"></span> Sign up</a></li>
-				<li><a href="dangnhap.jsp"><span
+				<li><a href="SignUp"><span class="glyphicon glyphicon-user"></span>
+						Sign up</a></li>
+				<li><a href="KiemTraDangNhap"><span
 						class="glyphicon glyphicon-log-in"></span> Login</a></li>
 				<%
 				} else {
 				%>
 				<li><a href="#"><span class="glyphicon glyphicon-user"></span>
-						Xin chào: <%=session.getAttribute("dn")%></a></li>
-				<li><a  data-toggle="modal" data-target="#exampleModal"><span
+						Xin chào: <%=user.getFullName()%></a></li>
+				<li><a data-toggle="modal" data-target="#exampleModal"><span
 						class="glyphicon glyphicon-user"></span> Logout</a></li>
 				<!-- Modal -->
 				<div class="modal fade" id="exampleModal" tabindex="-1"
@@ -66,7 +74,7 @@ response.setCharacterEncoding("utf-8");
 							<div class="modal-footer">
 								<button type="button" class="btn btn-secondary"
 									data-dismiss="modal">Cancel</button>
-								<a href="thoat.jsp" type="button" class="btn btn-primary">OK</a>
+								<a href="Logout" type="button" class="btn btn-primary">OK</a>
 							</div>
 						</div>
 					</div>
@@ -82,27 +90,20 @@ response.setCharacterEncoding("utf-8");
 	<%
 	request.setCharacterEncoding("utf-8");
 	response.setCharacterEncoding("utf-8");
-	LoaiBo lbo = new LoaiBo();
-	SachBo sbo = new SachBo();
-	String tk = request.getParameter("txttk");
-	String ml = request.getParameter("ml");
-	List<SachBean> dssach = sbo.getSach();
-	if (tk != null) {
-		dssach = sbo.find(tk);
-	}
-	if (ml != null) {
-		dssach = sbo.searchMl(ml);
-	}
+
+	List<SachBean> dssach = (List<SachBean>) request.getAttribute("dssach");
+
+	List<LoaiBean> dsloai = (List<LoaiBean>) request.getAttribute("dsloai");
 	%>
 	<table width="100%" align="center">
 		<tr>
 			<td width="20%" valign="top">
 				<table class="table table-hover">
 					<%
-					for (LoaiBean l : lbo.getLoai()) {
+					for (LoaiBean l : dsloai) {
 					%>
 					<tr>
-						<td><a href="htsach.jsp?ml=<%=l.getMaloai()%>"> <%=l.getTenloai()%>
+						<td><a href="HtSach?ml=<%=l.getMaloai()%>"> <%=l.getTenloai()%>
 						</a></td>
 					</tr>
 					<%
@@ -111,6 +112,45 @@ response.setCharacterEncoding("utf-8");
 				</table>
 			</td>
 			<td width="60%" valign="top">
+
+			<h2><%=request.getAttribute("muatc")!=null?"Mua hang thanh cong !":"" %></h2>
+				<div class="container" style="width: 80%">
+					
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+						<%for(int i=0;i<3;i++) {
+							if(i == 0){%>
+							<div class="item active">
+								<img src="https://aphoto.vn/wp-content/uploads/2018/02/anh-chup-dien-thoai-dep.jpg" style="width:100%;height:300px;">
+							</div>
+							<% }else{%>
+							<div class="item">
+								<img src="https://aphoto.vn/wp-content/uploads/2018/02/anh-dep-chup-va-blend-bang-dien-thoai-7.jpg" style="width:100%;height:300px">
+							</div>
+							
+							<%}} %>
+						</div>
+
+						<!-- Left and right controls -->
+						<a class="left carousel-control" href="#myCarousel"
+							data-slide="prev"> <span
+							class="glyphicon glyphicon-chevron-left"></span> <span
+							class="sr-only">Previous</span>
+						</a> <a class="right carousel-control" href="#myCarousel"
+							data-slide="next"> <span
+							class="glyphicon glyphicon-chevron-right"></span> <span
+							class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
 				<table class="table table-hover">
 					<%
 					int n = dssach.size();
@@ -120,7 +160,10 @@ response.setCharacterEncoding("utf-8");
 					<tr>
 						<td><img src="<%=s.getAnh()%>"><br> <%=s.getTensach()%>
 							<br> <%=s.getTacgia()%> <br> <%=s.getGia()%> <br>
-							<a href="giohang.jsp?ms=<%=s.getMasach()%>&ts=<%=s.getTensach()%>&gia=<%=s.getGia()%>"> <img src="buynow.jpg">
+							Số lượng:<%=s.getSoluong() %><br>
+							<a
+							href="ThemGioHang?ms=<%=s.getMasach()%>&ts=<%=s.getTensach()%>&gia=<%=s.getGia()%>">
+								<img src="buynow.jpg">
 						</a></td>
 						<%
 						i++;
@@ -129,7 +172,10 @@ response.setCharacterEncoding("utf-8");
 						%>
 						<td><img src="<%=s.getAnh()%>"><br> <%=s.getTensach()%>
 							<br> <%=s.getTacgia()%> <br> <%=s.getGia()%> <br>
-							<a href="giohang.jsp?ms=<%=s.getMasach()%>&ts=<%=s.getTensach()%>&gia=<%=s.getGia()%>"> <img src="buynow.jpg">
+							Số lượng:<%=s.getSoluong() %><br>
+							<a
+							href="ThemGioHang?ms=<%=s.getMasach()%>&ts=<%=s.getTensach()%>&gia=<%=s.getGia()%>">
+								<img src="buynow.jpg">
 						</a></td>
 						<%
 						}
@@ -141,7 +187,10 @@ response.setCharacterEncoding("utf-8");
 						%>
 						<td><img src="<%=s.getAnh()%>"><br> <%=s.getTensach()%>
 							<br> <%=s.getTacgia()%> <br> <%=s.getGia()%> <br>
-							<a href="giohang.jsp?ms=<%=s.getMasach()%>&ts=<%=s.getTensach()%>&gia=<%=s.getGia()%>"> <img src="buynow.jpg">
+							Số lượng:<%=s.getSoluong() %><br>
+							<a
+							href="ThemGioHang?ms=<%=s.getMasach()%>&ts=<%=s.getTensach()%>&gia=<%=s.getGia()%>">
+								<img src="buynow.jpg">
 						</a></td>
 						<%
 						}
@@ -154,14 +203,30 @@ response.setCharacterEncoding("utf-8");
 
 			</td>
 			<td width="20%" valign="top">
-				<form action="htsach.jsp" method="get">
+				<form action="HtSach" method="get">
 					<input class="form-control" name="txttk" type="text"
-						value="<%=tk == null ? "" : tk%>" placeholder="Nhap tt"> <br>
-					<input class="btn-primary" name="butt" type="submit" value="Search">
+						value="<%=request.getParameter("tk") == null ? "" : request.getParameter("tk")%>"
+						placeholder="Nhap tt"> <br> <input
+						class="btn-primary" name="butt" type="submit" value="Search">
 				</form>
 			</td>
 		</tr>
 	</table>
+
+	<nav class="float-end" style="display: grid; justify-content: center;">
+		<ul class="pagination">
+			<%
+			long totalPages = (long) request.getAttribute("totalPages");
+			for (long i = 1; i <= totalPages; i++) {
+			%>
+			<li class="page-item"><a href="HtSach?page=<%=i%>"
+				class="page-link"><%=i%></a></li>
+			<%
+			}
+			%>
+
+		</ul>
+	</nav>
 
 </body>
 </html>

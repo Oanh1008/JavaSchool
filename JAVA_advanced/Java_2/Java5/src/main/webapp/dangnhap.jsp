@@ -81,14 +81,35 @@
 						<div class="card">
 							<div class="card-header">
 								<h3>Sign In</h3>
-								<h6 style="color: red">
+								<h4 style="color: red">
 									<%
 									String kt = request.getParameter("kt");
-									if (kt != null && kt.equals("0")) { %>
-										Bad credentials !
-									<%}
+									if (kt != null && kt.equals("1")) {
 									%>
-								</h6>
+									Bad credentials !
+									<%
+									}
+									if (request.getParameter("signup") != null) {
+									%>
+									Your acccount already created !
+									<%
+									}
+									%>
+									
+									<%if (request.getParameter("captcha") != null) {
+									%>
+									Logined error greater than three times !
+									<%
+									}
+									%>
+									<%if (request.getParameter("captchakt") != null) {
+									%>
+									Error captcha, you are not a person !
+									<%
+									}
+									%>
+
+								</h4>
 								<div class="d-flex justify-content-end social_icon">
 									<span><i class="fab fa-facebook-square"></i></span> <span><i
 										class="fab fa-google-plus-square"></i></span> <span><i
@@ -96,7 +117,7 @@
 								</div>
 							</div>
 							<div class="card-body">
-								<form action="ktdn.jsp" method="post">
+								<form action="KiemTraDangNhap" method="post">
 									<div class="input-group form-group">
 										<div class="input-group-prepend">
 											<span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -112,6 +133,16 @@
 										<input name="pw" type="password" class="form-control"
 											placeholder="password">
 									</div>
+								
+									
+										<%if(request.getParameter("captcha") != null) {%>
+										<img style="align-items: center;" src="simpleCaptcha.jpg" /> <a href="KiemTraDangNhap">Refresh</a>
+										
+										<input style="align-items: center; " name="cc" type="text" 
+										class="form-control" placeholder="captcha">
+										<%} %>
+							
+									
 									<div class="row align-items-center remember">
 										<input type="checkbox">Remember Me
 									</div>

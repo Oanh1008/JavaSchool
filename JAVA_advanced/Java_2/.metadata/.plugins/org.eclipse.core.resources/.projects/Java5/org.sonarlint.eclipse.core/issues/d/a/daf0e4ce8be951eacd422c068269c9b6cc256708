@@ -1,19 +1,19 @@
 
-`
-java:S1444"(Make this "public static ds" field final(¶‹Âßúÿÿÿÿ8¯ÕŠÁ¸0HRMINORZ
-CODE_SMELL
-†
-java:S1104"NMake ds a static final constant or non-public and provide accessors if needed.(¶‹Âßúÿÿÿÿ8ˆÇ÷À¸0HRMINORZ
-CODE_SMELL
-q
-java:S2696"6Make the enclosing method "static" or remove this set.(«Õíñüÿÿÿÿ8¯ÕŠÁ¸0HRCRITICALZ
+l
+java:S1128"9Remove this unused import 'java.util.function.Predicate'.(ïÍ–¶8ˆÇ÷À¸0H‚.RMINORZ
 CODE_SMELL
 o
-java:S1128"7Remove this unused import 'java.util.stream.Collector'.(ß‹ÎÓøÿÿÿÿ8å×ìÃ¶0H‘RMINORZ
+java:S1128"7Remove this unused import 'java.util.stream.Collector'.(ß‹ÎÓøÿÿÿÿ8å×ìÃ¶0H„.RMINORZ
 CODE_SMELL
-l
-java:S1128"9Remove this unused import 'java.util.function.Predicate'.(ïÍ–¶8ˆÇ÷À¸0H“RMINORZ
+†
+java:S1104"NMake ds a static final constant or non-public and provide accessors if needed.(¶‹Âßúÿÿÿÿ8ˆÇ÷À¸0H†.RMINORZ
+CODE_SMELL
+`
+java:S1444"(Make this "public static ds" field final(¶‹Âßúÿÿÿÿ8¯ÕŠÁ¸0H‡.RMINORZ
+CODE_SMELL
+q
+java:S2696"6Make the enclosing method "static" or remove this set.(«Õíñüÿÿÿÿ8¯ÕŠÁ¸0Hˆ.RCRITICALZ
 CODE_SMELL
 U
-java:S2386"Make member "ds" "protected".(«Õíñüÿÿÿÿ8¯ÕŠÁ¸0H•RMINORZ
+java:S2386"Make member "ds" "protected".(«Õíñüÿÿÿÿ8¯ÕŠÁ¸0H‰.RMINORZ
 CODE_SMELL

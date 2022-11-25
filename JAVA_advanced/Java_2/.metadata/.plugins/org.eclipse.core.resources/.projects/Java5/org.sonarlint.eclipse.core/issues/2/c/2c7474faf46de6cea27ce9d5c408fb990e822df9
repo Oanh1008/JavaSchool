@@ -1,4 +1,12 @@
 
-}
-java:S1192"HDefine a constant instead of duplicating this literal "LÃª Nam" 5 times.(‘Ïå18´üìÀ¶0H¿RCRITICALZ
+]
+java:S1128
+"*Remove this unused import 'bean.LoaiBean'.(¢ŠŠ÷8‘ì©€Ä0H…:RMINORZ
 CODE_SMELL
+‚
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¨Î±ÿÿÿÿÿ8Ù” €Ä0H‡:RBLOCKERZBUG
+e
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8‘ì©€Ä0Hˆ:RMINORZ
+CODE_SMELL
+‚
+java:S2095;"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¨Î±ÿÿÿÿÿ8´úªÆ0HŠ:RBLOCKERZBUG
