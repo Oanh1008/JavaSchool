@@ -35,7 +35,7 @@ public class CommonController {
         return "login";
     }
 
-    @PostMapping("/login/handle")
+    @PostMapping("/login")
     public String loginHandle(@ModelAttribute("login") LoginDto loginDto) {
         log.info(loginDto);
         return "redirect:/booing247/home";

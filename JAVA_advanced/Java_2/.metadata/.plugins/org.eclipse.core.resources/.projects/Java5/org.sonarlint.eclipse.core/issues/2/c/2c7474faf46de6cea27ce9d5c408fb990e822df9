@@ -1,12 +1,12 @@
 
+e
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8‘ì©€Ä0HpRMINORZ
+CODE_SMELL
+‚
+java:S2095;"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¨Î±ÿÿÿÿÿ8´úªÆ0H’pRBLOCKERZBUG
 ]
 java:S1128
-"*Remove this unused import 'bean.LoaiBean'.(¢ŠŠ÷8‘ì©€Ä0H…:RMINORZ
+"*Remove this unused import 'bean.LoaiBean'.(¢ŠŠ÷8‘ì©€Ä0H“pRMINORZ
 CODE_SMELL
 ‚
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¨Î±ÿÿÿÿÿ8Ù” €Ä0H‡:RBLOCKERZBUG
-e
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8‘ì©€Ä0Hˆ:RMINORZ
-CODE_SMELL
-‚
-java:S2095;"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¨Î±ÿÿÿÿÿ8´úªÆ0HŠ:RBLOCKERZBUG
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¨Î±ÿÿÿÿÿ8Ù” €Ä0H•pRBLOCKERZBUG

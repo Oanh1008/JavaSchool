@@ -76,6 +76,7 @@ public class SachBean {
 	public void setThanhtien(long thanhtien) {
 		this.thanhtien = thanhtien;
 	}
+
 	
 	
 }

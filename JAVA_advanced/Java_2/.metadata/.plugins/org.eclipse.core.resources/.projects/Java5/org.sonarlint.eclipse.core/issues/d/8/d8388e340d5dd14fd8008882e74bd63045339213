@@ -1,36 +1,36 @@
 
-{	Web:S5255$"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(ºÛ•øÿÿÿÿ8ôƒŒÆ0H“9RMAJORZ
+^Web:ImgWithoutAltCheck„"%Add an "alt" attribute to this image.(­ìÎ÷8ôƒŒÆ0H¶sRMINORZBUG
+U	Web:S5256e"%Add "<th>" headers to this "<table>".(­ã’Òÿÿÿÿÿ8ˆË†Á¶0H·sRMAJORZBUG
+{	Web:S5255$"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.(ºÛ•øÿÿÿÿ8ôƒŒÆ0H¸sRMAJORZ
 CODE_SMELL
-^Web:TableWithoutCaptionCheckb" Add a description to this table.(‚€¥Ê8€ğìÀ¶0H9RMINORZBUG
-U	Web:S5256e"%Add "<th>" headers to this "<table>".(­ã’Òÿÿÿÿÿ8ˆË†Á¶0Hÿ8RMAJORZBUG
-`	Web:S1827r")Remove this deprecated "width" attribute.(ÃÚˆÆüÿÿÿÿ8€ğìÀ¶0H9RMAJORZ
+cWeb:ImgWithoutAltCheckˆ"%Add an "alt" attribute to this image.(£âÉ¥ûÿÿÿÿ8ôƒŒÆ0H¹sRMINORZBUG
+^Web:ImgWithoutAltCheck¦"%Add an "alt" attribute to this image.(Û¬¿8ôƒŒÆ0HºsRMINORZBUG
+V	Web:S5256š"%Add "<th>" headers to this "<table>".(­ã’Òÿÿÿÿÿ8€ğìÀ¶0H»sRMAJORZBUG
+^Web:TableWithoutCaptionCheckb" Add a description to this table.(‚€¥Ê8€ğìÀ¶0H¼sRMINORZBUG
+b	Web:S1827Í"*Remove this deprecated "valign" attribute.(Çû´Ãşÿÿÿÿ8€ğìÀ¶0H½sRMAJORZ
 CODE_SMELL
-w	Web:S5255Ø"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.( €€ô8ôƒŒÆ0H”9RMAJORZ
+cWeb:ImgWithoutAltCheck­"%Add an "alt" attribute to this image.(Ä¯…øÿÿÿÿ8şŞĞÂ¶0H¾sRMINORZBUG
+`	Web:S1827r")Remove this deprecated "width" attribute.(ÃÚˆÆüÿÿÿÿ8€ğìÀ¶0H¿sRMAJORZ
 CODE_SMELL
-cWeb:TableWithoutCaptionChecke" Add a description to this table.(­ã’Òÿÿÿÿÿ8€ğìÀ¶0Hı8RMINORZBUG
-a	Web:S1827r"*Remove this deprecated "valign" attribute.(ÃÚˆÆüÿÿÿÿ8€ğìÀ¶0HŒ9RMAJORZ
+cWeb:ImgWithoutAltCheck¡"%Add an "alt" attribute to this image.(Ä¯…øÿÿÿÿ8š…¶Á¶0HÀsRMINORZBUG
+i	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(œ÷ÃûÿÿÿÿHÁsRMAJORZBUG
+[	Web:S1827b")Remove this deprecated "align" attribute.(‚€¥Ê8€ğìÀ¶0HÂsRMAJORZ
 CODE_SMELL
-^Web:ImgWithoutAltCheck¦"%Add an "alt" attribute to this image.(Û¬¿8ôƒŒÆ0H’9RMINORZBUG
-V	Web:S5256š"%Add "<th>" headers to this "<table>".(­ã’Òÿÿÿÿÿ8€ğìÀ¶0Hü8RMAJORZBUG
-dWeb:TableWithoutCaptionCheckš" Add a description to this table.(­ã’Òÿÿÿÿÿ8ˆË†Á¶0Hˆ9RMINORZBUG
-P	Web:S5256b"%Add "<th>" headers to this "<table>".(‚€¥Ê8€ğìÀ¶0Hƒ9RMAJORZBUG
-`	Web:S1827d")Remove this deprecated "width" attribute.(Çû´Ãşÿÿÿÿ8€ğìÀ¶0H‡9RMAJORZ
+^Web:ImgWithoutAltCheckÁ"%Add an "alt" attribute to this image.(Û¬¿8ôƒŒÆ0HÃsRMINORZBUG
+cWeb:TableWithoutCaptionChecke" Add a description to this table.(­ã’Òÿÿÿÿÿ8€ğìÀ¶0HÄsRMINORZBUG
+dWeb:TableWithoutCaptionCheckš" Add a description to this table.(­ã’Òÿÿÿÿÿ8ˆË†Á¶0HÅsRMINORZBUG
+a	Web:S1827d"*Remove this deprecated "valign" attribute.(Çû´Ãşÿÿÿÿ8§‡äÿÃ0HÆsRMAJORZ
 CODE_SMELL
-b	Web:S1827Í"*Remove this deprecated "valign" attribute.(Çû´Ãşÿÿÿÿ8€ğìÀ¶0H…9RMAJORZ
+w	Web:S5255Ø"DAdd an "aria-label" or "aria-labbelledby" attribute to this element.( €€ô8ôƒŒÆ0HÇsRMAJORZ
 CODE_SMELL
-cWeb:ImgWithoutAltCheck­"%Add an "alt" attribute to this image.(Ä¯…øÿÿÿÿ8şŞĞÂ¶0H‰9RMINORZBUG
-cWeb:ImgWithoutAltCheck¡"%Add an "alt" attribute to this image.(Ä¯…øÿÿÿÿ8š…¶Á¶0Hş8RMINORZBUG
-^Web:ImgWithoutAltCheckÁ"%Add an "alt" attribute to this image.(Û¬¿8ôƒŒÆ0H9RMINORZBUG
-cWeb:ImgWithoutAltCheck¼"%Add an "alt" attribute to this image.(Ä¯…øÿÿÿÿ8ìŸ›Â¶0H€9RMINORZBUG
-^Web:ImgWithoutAltCheck„"%Add an "alt" attribute to this image.(­ìÎ÷8ôƒŒÆ0H9RMINORZBUG
-a	Web:S1827d"*Remove this deprecated "valign" attribute.(Çû´Ãşÿÿÿÿ8§‡äÿÃ0HŠ9RMAJORZ
+^Web:ImgWithoutAltCheck²"%Add an "alt" attribute to this image.(Û¬¿8ôƒŒÆ0HÈsRMINORZBUG
+cWeb:ImgWithoutAltCheck¼"%Add an "alt" attribute to this image.(Ä¯…øÿÿÿÿ8ìŸ›Â¶0HÉsRMINORZBUG
+a	Web:S1827Í")Remove this deprecated "width" attribute.(Çû´Ãşÿÿÿÿ8€ğìÀ¶0HÊsRMAJORZ
 CODE_SMELL
-a	Web:S1827Í")Remove this deprecated "width" attribute.(Çû´Ãşÿÿÿÿ8€ğìÀ¶0H„9RMAJORZ
+`	Web:S1827d")Remove this deprecated "width" attribute.(Çû´Ãşÿÿÿÿ8€ğìÀ¶0HËsRMAJORZ
 CODE_SMELL
-^Web:ImgWithoutAltCheck²"%Add an "alt" attribute to this image.(Û¬¿8ôƒŒÆ0H‘9RMINORZBUG
-cWeb:ImgWithoutAltCheckˆ"%Add an "alt" attribute to this image.(£âÉ¥ûÿÿÿÿ8ôƒŒÆ0H9RMINORZBUG
-[	Web:S1827b")Remove this deprecated "align" attribute.(‚€¥Ê8€ğìÀ¶0H‹9RMAJORZ
+a	Web:S1827r"*Remove this deprecated "valign" attribute.(ÃÚˆÆüÿÿÿÿ8€ğìÀ¶0HÌsRMAJORZ
 CODE_SMELL
-[	Web:S1827b")Remove this deprecated "width" attribute.(‚€¥Ê8€ğìÀ¶0H†9RMAJORZ
+[	Web:S1827b")Remove this deprecated "width" attribute.(‚€¥Ê8€ğìÀ¶0HÍsRMAJORZ
 CODE_SMELL
-i	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(œ÷ÃûÿÿÿÿH‚9RMAJORZBUG
+P	Web:S5256b"%Add "<th>" headers to this "<table>".(‚€¥Ê8€ğìÀ¶0HÎsRMAJORZBUG

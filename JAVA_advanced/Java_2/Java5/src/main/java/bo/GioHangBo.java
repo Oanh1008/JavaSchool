@@ -13,7 +13,7 @@ import bean.Temp;
 import dao.MuaHangDao;
 
 public class GioHangBo {
-	
+
 	private MuaHangDao muaHangDao = new MuaHangDao();
 	public List<GioHangBean> ds = new ArrayList<>();
 
@@ -30,16 +30,19 @@ public class GioHangBo {
 	public long ThanhTien() {
 		return ds.stream().mapToLong(d -> d.getThanhtien()).sum();
 	}
-	
+
 	public long TongSach() {
 		return ds.stream().mapToLong(d -> d.getSoluong()).sum();
 	}
+
 	public void xoaSach(String ms) {
 		ds.removeIf(d -> d.getMasach().equals(ms));
 	}
+
 	public void xoaAll() {
 		ds.removeAll(ds);
 	}
+
 	public void suaSL(String ms, long sl) {
 		for (GioHangBean h : ds) {
 			if (h.getMasach().equals(ms)) {
@@ -48,17 +51,29 @@ public class GioHangBo {
 			}
 		}
 	}
-	
-	public String bookGoods(int makh,List<GioHangBean> sachMuas,long tien) {
-		return muaHangDao.bookGoods(makh, sachMuas,ThanhTien());
+
+	public String bookGoods(int makh, List<GioHangBean> sachMuas, long tien) {
+		return muaHangDao.bookGoods(makh, sachMuas, ThanhTien());
 	}
-	
-	public Map<Temp, List<LichSuMuaHang>> lichSuMuaHang(int maKh){
-		
+
+	public Map<Temp, List<LichSuMuaHang>> lichSuMuaHang(int maKh) {
+
 		Map<Temp, List<LichSuMuaHang>> rs = muaHangDao.lichSuMuaHang(maKh).stream()
-				.sorted(Comparator.comparing(LichSuMuaHang::getNgayMua))
-				.collect(Collectors.groupingBy(t-> new Temp(t.getMhd(),t.getNgayMua(), t.getTongtien())));
+				.sorted(Comparator.comparing(t -> t.getMhd()))
+				.collect(Collectors.groupingBy(t -> new Temp(t.getMhd(), t.getNgayMua(), t.getTongtien())));
 		return rs;
 	}
+
+	public Map<Temp, List<LichSuMuaHang>> lichSuMuaHang() {
+
+		Map<Temp, List<LichSuMuaHang>> rs = muaHangDao.lichSuMuaHang().stream()
+				.collect(Collectors.groupingBy(t -> new Temp(t.getMhd(), t.getNgayMua(), t.getTongtien())));
+		return rs;
+	}
+	public String xacNhan(int mhd) {
+
+		return muaHangDao.xacNhan(mhd);
+	}
+
 
 }

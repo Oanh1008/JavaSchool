@@ -23,6 +23,10 @@ public class SachBo {
 		return sachDao.getSach(page,size);
 		
 	}
+	
+	public SachBean getSach(String masach) {
+		return getSach().stream().filter(t -> t.getMasach().equals(masach)).findFirst().get();
+	}
 	/**
 	 * search by mã loại
 	 * @param ml
@@ -36,5 +40,12 @@ public class SachBo {
 	public List<SachBean> find(String tk) {
 		return getSach().stream().filter(s ->s.getTensach().toLowerCase().contains(tk.toLowerCase().trim()))
 				.collect(Collectors.toList());
+	}
+	
+	public int themSach(SachBean s) {
+		return sachDao.themSach(s);
+	}
+	public int xoaSach(String masach) {
+		return sachDao.xoaSach(masach);
 	}
 }
